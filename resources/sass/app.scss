@@ -1,0 +1,125 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.mt-6 {
+	margin-top: 4rem !important;
+}
+
+.navbar-laravel {
+	background-color: $white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+// + & - Buttons
+td.details-control {
+	cursor: pointer;
+	text-align: center;
+
+	i {
+		color: green;
+		vertical-align: middle;
+	}
+}
+
+tr.shown td.details-control {
+	i {
+		color: red;
+	}
+}
+
+// Links
+.navbar-light .navbar-nav .nav-link {
+	color: $gray;
+}
+
+// Active Links
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+	color: $orange;
+}
+
+// Card Headers
+.card-header {
+	border-bottom: 1px solid $gray;
+	background-color: $orange;
+	color: $white;
+}
+
+// Marketing Materials
+.btn-group .btn {
+	box-shadow: none !important;
+}
+
+// Hover Effect for Images
+.download-btn {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 10px;
+
+	.fa-download {
+		color: $white;
+		font-size: 48px;
+		top: calc(50% - 28px);
+		left: calc(70% - 23px);
+	}
+
+	.fa-eye {
+		color: $white;
+		font-size: 48px;
+		top: calc(50% - 28px);
+		left: calc(30% - 23px);
+	}
+}
+
+.img-container:hover .download-btn {
+	display: block;
+}
+
+// Make items slightly smaller
+.brochures-grid-item.brochures,
+.luna-grid-item.interior,
+.luna-lite-grid-item.asteroid-silver,
+.luna-lite-grid-item.space-blue,
+.luna-lite-grid-item.interior,
+.luna-rover-grid-item.interior,
+.sol-grid-item.interior {
+	width: 200px;
+	margin: 3px;
+}
+
+// Make responsive video embeds
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// Secondary Navigation
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: $white;
+	background-color: $gray;
+}
